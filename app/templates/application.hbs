@@ -1,0 +1,30 @@
+<div class="main-container">
+	<h1>Locate Me</h1>
+
+	<div class="child-container">
+		<button class='button' {{action "geolocate" on "click"}} >Get My Location</button>
+		<table class="child-container">
+			<tr>
+				<td>
+					<label id='latlabel' class='label-style'>Lattitude:</label>
+				</td>
+				<td>
+					<label id='lat' class='latlong-value-style'>{{userLocationLat}}</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label id='longlabel' class='label-style'>Longitude:</label>
+				</td>
+				<td>
+					<label id='long' class='latlong-value-style'>{{userLocationLng}}</label>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	{{#if geolocateerrors}}
+		<div>{{ geolocateerrors }}</div>
+	{{/if}}
+{{outlet}}
+</div>

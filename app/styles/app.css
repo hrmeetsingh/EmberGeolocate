@@ -1,0 +1,57 @@
+body{
+
+}
+
+.main-container{
+  font-family: 'Arial';
+  background-color: #fff;
+  color: #000;
+  border: 1px solid;
+  text-align: center;
+  height: 400px;
+  border-radius: 4px;
+
+}
+
+.child-container{
+	font-family: 'Arial';
+	background-color: rgba(153, 216, 255, 0.24);
+	width: 50%;
+	height: 50%;
+	border: 1px solid;
+	border-radius: 4px;
+	margin: 0 auto;
+}
+
+.button-style{
+	font-family: 'Arial';
+    height: 30px;
+    margin: 9px auto;
+    padding: 10px;
+}
+
+.button {
+    background-color: #4c80af;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 2px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.label-style{
+	font-family: 'Arial';
+	margin: 0 auto;
+	display: block;
+    margin: 18px;
+    text-align: left;
+}
+
+.latlong-value-style{
+	font-family: 'Arial';
+	margin: 0 auto;
+}
