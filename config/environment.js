@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'geolocationpage',
+    modulePrefix: 'ember-geolocate',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

@@ -1,7 +1,7 @@
 {
-  "name": "geolocationpage",
+  "name": "ember-geolocate",
   "version": "0.0.0",
-  "description": "Small description for geolocationpage goes here",
+  "description": "Small description for ember-geolocate goes here",
   "license": "MIT",
   "author": "",
   "directories": {
