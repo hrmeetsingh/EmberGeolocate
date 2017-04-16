@@ -1,9 +1,9 @@
 {
   "name": "ember-geolocate",
-  "version": "0.0.0",
-  "description": "Small description for ember-geolocate goes here",
+  "version": "0.0.1",
+  "description": "EmberGeolocate is a sample app for demonstrating use of Selenium webdriver to test Geolocation on web applications with mocked locations",
   "license": "MIT",
-  "author": "",
+  "author": "Harmeet Singh <er.harmeetsingh@hotmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -12,7 +12,11 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "pretest": "ember serve &",
+    "test": "PATH=$PATH:build/install_libraries/bin mocha ./tests/selenium/selenium-geolocation-test.js",
+    "posttest": "npm run clean",
+    "clean": "rm -rf tmp && lsof -wni tcp:4200 | awk '{print $2}' | grep -v 'PID' | xargs kill -9",
+    "setup-geckodriver": "./tests/selenium/setup-scripts/gecko-driver-download-script.sh"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -35,7 +39,9 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.3",
-    "loader.js": "^4.0.10"
+    "loader.js": "^4.0.10",
+    "selenium-webdriver": "^3.3.0",
+    "mocha": "^3.2.0"
   },
   "engines": {
     "node": ">= 0.12.0"

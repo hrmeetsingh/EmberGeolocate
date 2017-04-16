@@ -13,6 +13,7 @@ export default Ember.Controller.extend({
 		geolocate(){
 			let self = this;
 			if (navigator.geolocation) {
+            self.set("isLocationLoading", true);
         		navigator.geolocation.getCurrentPosition(displayUsersPostalCode, showError);
       		}
 

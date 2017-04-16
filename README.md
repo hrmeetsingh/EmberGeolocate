@@ -4,7 +4,7 @@ This is a sample app in EmberJS to demonstrate the mocking of browser geolocatio
 
 ## Why EmberJS
 
-It is quick - That's it!! Intent is to show the automation tests behaviour.
+It is quick - That's it!! Intent is to show the selenium automation tests behaviour.
 
 ## Prerequisites
 
@@ -30,9 +30,13 @@ You will need the following things properly installed on your computer.
 
 ### Running Tests
 
-This is currently WIP
-* `ember test`
-* `ember test --server`
+There is a selenium test which sets up the Firefox geckodriver with the suitable values of "geo.wifi.uri" with a mock JSON having Lat-Long values, a response, which otherwise would come from Google or any other geolocating service configured for your browser. You can check the value by typing "about.config" in Firefox address bar and filter "geo.wifi.url" and can manually setup your location if you wish.
+
+For running the selenium test:
+
+* `npm run setup-geckodriver`
+* `npm run clean`
+* `npm run test`
 
 ### Building
 
@@ -41,8 +45,4 @@ This is currently WIP
 
 ### Note
 
-This is only a demo app to demonstrate the behaviour of browser geolocation and how you can mock this geolocation to make your Selenium tests behave as the location is the one you specified
-
-### WIP
-
-Selenium tests to follow
+This is only a demo app to demonstrate the behaviour of browser geolocation and how you can mock this geolocation to make your Selenium tests behave as the location is the one you specified.

@@ -3,6 +3,8 @@
 # compiled output
 /dist
 /tmp
+/build
+/selenium-dist
 
 # dependencies
 /node_modules
