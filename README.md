@@ -30,7 +30,7 @@ You will need the following things properly installed on your computer.
 
 ### Running Tests
 
-There is a selenium test which sets up the Firefox geckodriver with the suitable values of "geo.wifi.uri" with a mock JSON having Lat-Long values, a response, which otherwise would come from Google or any other geolocating service configured for your browser. You can check the value by typing "about.config" in Firefox address bar and filter "geo.wifi.url" and can manually setup your location if you wish.
+There is a selenium test which sets up the Firefox geckodriver with the suitable values of "geo.wifi.uri" with a mock JSON having Lat-Long values, a response, which otherwise would come from Google or any other geolocating service configured for your browser. You can check the value by typing "about:config" in Firefox address bar and filter "geo.wifi.url" and can manually setup your location if you wish.
 
 For running the selenium test:
 
