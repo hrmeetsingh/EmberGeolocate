@@ -1,4 +1,5 @@
 # EmberGeolocate
+[![Build Status](https://travis-ci.org/hrmeetsingh/EmberGeolocate.png)](https://travis-ci.org/hrmeetsingh/EmberGeolocate)
 
 This is a sample app in EmberJS to demonstrate the mocking of browser geolocation in Selenium automation tests.
 
